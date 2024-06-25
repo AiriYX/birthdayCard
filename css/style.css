@@ -234,4 +234,3 @@ input#volume-control::-moz-range-track {
 #headshell:checked ~ .vinyl {
   animation: play 2s linear infinite .3s;
 }
-

@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/style.css" rel="stylesheet">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/message.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marhey&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Happy birthday!</title>
+    <style>
+        .navigate-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <div class="record-player">
-    <input type="checkbox" id="headshell">
-    <label class="headshell" for="headshell"></label>
-    <audio id="player">
-    <source src="util/RINI -Aphrodite Audio.mp3" type="audio/mpeg"/>
-  </audio>
-    <input type="range" max="1" min="0" step="0.1" id="volume-control" onchange="audioVolume(this.value)">
-    <div class="plinth"></div>
-    <div class="platter"></div>
-    <div class="vinyl"></div>
-    <div class="top-circle"></div>
-  </div>
-
-  <script src="index.js"></script>
+    <div class="card">
+        <div class="outside">
+          <div class="front">
+            <p>Happy Birthday Evi!</p>
+            <div class="cake">
+              <div class="top-layer"></div>
+              <div class="middle-layer"></div>
+              <div class="bottom-layer"></div>
+              <div class="candle"></div>
+            </div>
+          </div>
+          <div class="back"></div>
+        </div>
+        <div class="inside">
+          <p  style="font-family: 'Shadows Into Light', cursive; font-size: 12px;">Time flies! You are now officially a year older, which means that you are an old grandpa! I cannot give this to you in person but I hope all your dreams and wishes come true and know that I am happy to have you in my life. You are a big strong baby and I am proud for how far you have come. Whatever challenges you will come cross in life, I hope I can be there and be your biggest cheerleader ❤️ Happy birthday Meanie </p>
+          <p style="font-family: 'Shadows Into Light', cursive; font-size: 12px;">--Kayla</p>
+      
+          <h1 class="confetti" onclick="startConfetti()">&#127873;</h1>
+        </div>
+    </div>
+    <button class="navigate-button" onclick="window.location.href='musicPlayer.html'">></button>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
