@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   // Show dancing dogs when music plays
   player.onplay = function () {
-    for (let i = 0; i < 20; i++) {
-      // Create 20 dancing dogs
+    for (let i = 0; i < 50; i++) {
+      // Create 50 dancing dogs
       createDancingDog();
     }
   };
